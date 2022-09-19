@@ -10,14 +10,47 @@ Para resaltar las etiquetas entre el texto del documento, se utilizan corchetes 
 </nombre de_ etiqueta> (etiqueta de cierre)
 -->
 
-<!-- para poner comentarios
+ETIQUETAS
+    se encuentran denro de <> 
+    <nombre_de etiqueta> Se pone toda la informacion qeu podemos englobar dentro de la etiqueta</nombre_de etiqueta>
     
-<a> se usa para los links</a>
-Atributos de a:
-   <href> para enviar al sitio que queramos, link de destino</href>
-    class - referencia al css
--->
+        EJEMPLO
+    <a> "a" se usa para los links</a>
+    <P> "p" Parrafo </P>
+    <button> "b" botones </button>
+    <section> "section" Secciones </section>
+    <div> "div" secciones </div>
 
-<a href="https://developer.mozilla.org/es/docs/Web/HTML" id="1" class="web">Documentacion de HTML</a>
-<a href="https://www.linkedin.com/in/nathaly-nar-paes-b6a483111/" id="1" class="web">Nathaly J Nar</a>
+ATRIBUTOS
+          
+ Atributos de a pueden ser:
+   
+ * "href" atributo de referencia, para enviar al sitio que queramos, link de destino
+   "class" - referencia al css
+
+   <a href="https://developer.mozilla.org/es/docs/Web/HTML" id="1" class="Link a Developer Mozilla"> Documentacion de HTML</a>
+    
+   <a href="https://www.linkedin.com/in/nathaly-nar-paes-b6a483111/" id="1" class="web">
+    Nathaly J Nar
+    </a>
+
+ETIQUETA UNICA: No  necesita etiqueta de cierre, son pocas, las identificamos por que no tienen texto
+        es un atributo que esta ahí y lo que va a hacer es una referencia.
+
+        ejemplo 
+        * etiqueta "IMG" imagen, 
+        - Atributo de img es "src" source, trae algo, es de peicion, trabaja de 2 formas
+         "img src= "pego el link"" ó "omg src="la carpeta""
+        - ALT Las imagenes pueden tener atributos "alt" da contexto de que es lo que contiene esa imagen
+
+  link de imagen desde servidor <img src="https://previews.123rf.com/images/photodeti/photodeti2004/photodeti200400193/144696106-tres-cachorros-de-bichon-frise-mirando-a-la-cámara-sobre-un-fondo-del-árbol-de-navidad-.jpg" alt="Three bichon frise pupies looking at camera on a background of the christmas tree. - 144696106" title="Three bichon frise pupies looking at camera on a background of the christmas tree. - 144696106" class="ImageDisplayer__image" style="width: 144px; height: 105px; max-width: 144px; max-height: 105px; display: block;">
+       
+   link de imagen desde carpeta <img src="image/perritu.jpg" alt="perritu" />
+
+        * Etiqueta INPUT sirve para tener interaccion con el usuario
+        -Atributo TYPE con este puedo ingresar text=texto, date=fecha... 
+        -NAME similar al id, para poder identificar la informacion
+        -
+        Cuadro de texto <input type="texto" name="user_name" />
+        Cuadro de fecha <input type="date" name="Fecha"/>
 
