@@ -1,7 +1,9 @@
 <!-- ETIQUETAS NECESARIAS PARA EL HTML Y TENGA ESTRUCTURA-->
 <!DOCTYPE HTML> <!--PRIMERA ETIQUETA PARA DECIR QUE ES UN HTML, es una etiqueta unica-->
+
 <html lang="es"> <!--html: es la Etiqueta Principal, envuelve todo el código
     lang: es para que identifique el idioma del sitio, es=español, ar=arabe, inglés=en ...  -->
+    
     <head> 
     <!--Dentro de esta va <title>, ésta muestra en la pestaña del sitio el título de la página, 
         <meta metadatos: información que vamos a pasar al navegador con charset="para decirle en que tipo de codificacion de texto está , utf-8 es la codificacion mas comun que identifica letras con acentos, y hay otras codificaciones para cuando traen caracteres especiales como katakanas, hiragana... ">-->
@@ -10,21 +12,37 @@
             name="Web Site del desarrollador"
             content="Datos de contacto"
         />
-        <title> Profile: Nathaly NVaez </title>
+        <title> Profile: Nathaly Vaez </title>
     </head>
+    
     <body>
     <!-- Dentro de est van:
     <header> van los encabezados
     <article> va todo el texto 
     <footer> pies de página
     -->
+        
         <header> 
+            Nathaly
+            <!--<na> sirve para hacer un menú para navegar, Se lopone muy a menudo-->
+            <nav>
+                <!--Siempre va una lista <ul>, con sus items en <il>-->
+                <ul>
+                    <!--puedo crear una ruta para cada elemento con atributo <a>, ponemos # es una referencia que nos lleva a la misma pagina-->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="folio.HTML">Portafolio</a></li>
+                    <li><a href="contact.HTML">Contacto</a></li>
+                </ul>
+            </nav>
+           
             <!-- Existen etiquetas TITULO, tienen unas jerarquias que van de mayor a menor ,comenzando con 1 que es la mayor jerarquia-->
             <h1> Dra Nathaly Narváez Paredes </h1>
+
         </header>
+       
         <article>
            <section class=""img-profile> <!-- lo ponfgo si quiero que se divida en secciones-->
-                <img src="image/perritu.jpg" alt="imagen de perfil de Nathaly"/>
+                <img src="img/perritu.jpg" alt="imagen de perfil de Nathaly"/>
            </section>
            <section class="text">
             <h2> Descripción </h2>
@@ -33,14 +51,53 @@
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <br>Saltos de linea</br>
-            
-           </section>
-           
-        </article>
+            </section> 
+
+            <section>
+            <h2>Skills</h2>
+            <!--lista numerada no ordenada <ol>, dentro de esta tenemos elemento de lista <li> list it -->
+            <ol>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>Swift</li>
+                <li>Python</li>
+                <li>Java Scrip</li>
+            </ol>
+
+            <!--lista con viñetas <ul>, dentro de esta tenemos elemento de lista <li> list it-->
+            <ol>
+                <ul>Java</ul>
+                <ul>HTML</ul>
+                <ul>Swift</ul>
+                <ul>Python</ul>
+                <ul>Java Scrip</ul>
+            </ol>
+            </section>
+       </article>
+        
         <footer>
+            <h1>Títulos</h1>
+            <h2>Cuando inicia un título</h2>
+            <h3>Negrita</h3>
+            
+            <!--las siguientes no se usan casi para nada-->
+            <h4></h4>
+            <h5></h5>
+            <h6></h6>
+
             <a href="https://twitter.com/?lang=es" target="_blank">Twitter</a>
         </footer>
+   
     </body>
+
 </html>
 
+<!--El siguiente atributo su fucnion es para establecer jerarquias de subtitulos
+<h1>Titulo 1</h1>
+<h2>Titulo 2</h2>
+<h3>Negrita</h3>
 
+las siguientes no se usan casi para nada
+<h4></h4>
+<h5></h5>
+<h6></h6> -->
