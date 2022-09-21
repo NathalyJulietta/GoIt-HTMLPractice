@@ -1,59 +1,46 @@
-<!--
-Le Etiqueta (tag)  <> - es un elemento del lenguaje de marcado de hipertexto.
-Estos son los bloques básicos mas pequeños de los que se compone cualquier pagina web.
-Cada etiqueta representa una entidad: título, lista, párrafo de texto, imagen.
-Para resaltar las etiquetas entre el texto del documento, se utilizan corchetes angulares 
- que especifican el nombre de la etiqueta y sus atributos.
-       
- <nombre_de etiqueta>
-  Va toda la información que queremos englobar dentro de la etiqueta 
-</nombre de_ etiqueta> (etiqueta de cierre)
--->
+<!-- ETIQUETAS NECESARIAS PARA EL HTML Y TENGA ESTRUCTURA-->
+<!DOCTYPE HTML> <!--PRIMERA ETIQUETA PARA DECIR QUE ES UN HTML, es una etiqueta unica-->
+<html lang="es"> <!--html: es la Etiqueta Principal, envuelve todo el código
+    lang: es para que identifique el idioma del sitio, es=español, ar=arabe, inglés=en ...  -->
+    <head> 
+    <!--Dentro de esta va <title>, ésta muestra en la pestaña del sitio el título de la página, 
+        <meta metadatos: información que vamos a pasar al navegador con charset="para decirle en que tipo de codificacion de texto está , utf-8 es la codificacion mas comun que identifica letras con acentos, y hay otras codificaciones para cuando traen caracteres especiales como katakanas, hiragana... ">-->
+        <meta charset="utf-8"/> 
+        <meta
+            name="Web Site del desarrollador"
+            content="Datos de contacto"
+        />
+        <title> Profile: Nathaly NVaez </title>
+    </head>
+    <body>
+    <!-- Dentro de est van:
+    <header> van los encabezados
+    <article> va todo el texto 
+    <footer> pies de página
+    -->
+        <header> 
+            <!-- Existen etiquetas TITULO, tienen unas jerarquias que van de mayor a menor ,comenzando con 1 que es la mayor jerarquia-->
+            <h1> Dra Nathaly Narváez Paredes </h1>
+        </header>
+        <article>
+           <section class=""img-profile> <!-- lo ponfgo si quiero que se divida en secciones-->
+                <img src="image/perritu.jpg" alt="imagen de perfil de Nathaly"/>
+           </section>
+           <section class="text">
+            <h2> Descripción </h2>
+            <p> Párrafo 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <br>Saltos de linea</br>
+            
+           </section>
+           
+        </article>
+        <footer>
+            <a href="https://twitter.com/?lang=es" target="_blank">Twitter</a>
+        </footer>
+    </body>
+</html>
 
-ETIQUETAS
-    se encuentran denro de <> 
-    <nombre_de etiqueta> Se pone toda la informacion qeu podemos englobar dentro de la etiqueta</nombre_de etiqueta>
-    
-        EJEMPLO
-    <a> "a" se usa para los links</a>
-    <P> "p" Parrafo </P>
-    <button> "b" botones </button>
-    <section> "section" Secciones </section>
-    <div> "div" secciones </div>
 
-ATRIBUTOS
-          
- Atributos de a pueden ser:
-   
- * "href" atributo de referencia, para enviar al sitio que queramos, link de destino
-   "class" - referencia al css
-
-   <a href="https://developer.mozilla.org/es/docs/Web/HTML" id="1" class="Link a Developer Mozilla"> Documentacion de HTML</a>
-    
-   <a href="https://www.linkedin.com/in/nathaly-nar-paes-b6a483111/" id="1" class="web">
-    Nathaly J Nar
-    </a>
-    -Atributo Atributo Target  <a href="https://www.linkedin.com/in/nathaly-nar-paes-b6a483111/" id="1" class="web" target="_blank"> Nathaly</a>
-
-ETIQUETA UNICA: No  necesita etiqueta de cierre, son pocas, las identificamos por que no tienen texto
-        es un atributo que esta ahí y lo que va a hacer es una referencia.
-
-        ejemplo 
-        * etiqueta "IMG" imagen, 
-        - Atributo "src" source, trae algo, es de peicion, trabaja de 2 formas
-         "img src= "pego el link"" ó "omg src="la carpeta""
-        - atributo ALT Las imagenes pueden tener atributos "alt" da contexto de que es lo que contiene esa imagen, ayuda a personas con problemas visuales por que le dice que contiene laimagen
-        
-
-    link de imagen desde servidor <img src="https://previews.123rf.com/images/photodeti/photodeti2004/photodeti200400193/144696106-tres-cachorros-de-bichon-frise-mirando-a-la-cámara-sobre-un-fondo-del-árbol-de-navidad-.jpg" alt="Three bichon frise pupies looking at camera on a background of the christmas tree. - 144696106" title="Three bichon frise pupies looking at camera on a background of the christmas tree. - 144696106" class="ImageDisplayer__image" style="width: 144px; height: 105px; max-width: 144px; max-height: 105px; display: block;">
-       
-    link de imagen desde carpeta <img src="image/perritu.jpg" alt="perritu" />
-
-        * Etiqueta INPUT sirve para crear controles de interaccion con el usuario
-        Atributo TYPE con este puedo ingresar text=texto, date=fecha... 
-        Atributo NAME similar al id, para poder identificar la informacion
-        Atrubuto de texto <input type="texto" name="user_name" />
-        Atributo de fecha <input type="date" name="Fecha"/>
-        Atributo de file <input type="file" name="archivo" />
-        Atributo de password <input type="password" name="contraseña" />
-        
