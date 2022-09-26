@@ -7,12 +7,15 @@
     <head> 
     <!--Dentro de esta va <title>, ésta muestra en la pestaña del sitio el título de la página, 
         <meta metadatos: información que vamos a pasar al navegador con charset="para decirle en que tipo de codificacion de texto está , utf-8 es la codificacion mas comun que identifica letras con acentos, y hay otras codificaciones para cuando traen caracteres especiales como katakanas, hiragana... ">-->
-        <meta charset="utf-8"/> 
-        <meta
-            name="Web Site del desarrollador"
+        <meta charset="utf-8"/> <!-- para que reconosca carcter especiales de los diferentes idiomas-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- name="Web Site del desarrollador"
             content="Datos de contacto"
-        />
-        <title> Profile: Nathaly Vaez </title>
+        -->
+        <!--luego de crear la carpeta css creo el tag link para hacer una referencia al css-->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+        <title> Profile: Nathaly JVaez </title>
     </head>
     
     <body>
@@ -73,6 +76,91 @@
                 <ul>Java Scrip</ul>
             </ol>
             </section>
+            <section> 
+                <table> 
+                    <!--TABLAS: <table> , la tablas son importantes para ingresar mucha información, sobretodo informacion que desplieguen contenido
+                        etiqueta de inicio de tabla <table></table>
+                        etiqueta de head de tabla <thead></heaad>
+                        etiqueta de titulo <th></th>
+                        etiqueta de filas <tr></tr>
+                        etiqueta de columnas<td></td>
+                        ejem: pongo 3 grupos de th, en cada creo una tabla con 4filas= copio 4 veces tr y 3 columnas= dentro de cada tr pongo  3 veceds td
+                    -->               
+                  <thead>
+                    <th>
+                        Número
+                    </th>
+                    <th>ABC</th>
+                    <th>abc</th>
+                 </thead>
+<tbody>
+                    <tr> 
+                        <td>123</td>
+                        <td>ABC</td>
+                        <td>jkl</td>
+                    </tr>
+                    <tr> 
+                        <td>456</td>
+                        <td>DEF</td>
+                        <td>ghi</td>
+                    </tr>
+                    <tr> 
+                        <td>789 </td>
+                        <td>GHI</td>
+                        <td>def</td>
+                    </tr>
+                    <tr> 
+                        <td>000 </td>
+                        <td>JKL</td>
+                        <td>abc</td>
+                    </tr>
+                </table>
+            </tbody>
+            <!-- 
+                tabla sin diseño
+            -->                
+                <table> 
+                    <!--
+                    -podemos hacer agrupaciones de tablas o unir celdas de forma horizontal o vertical
+                    ponemos <thead> <tr> <th>ocupada</th><th>vacia</th> esta vacia hace que nos respete espacios
+                    -Con css: rowspan="" y colspan=""
+                    -->       
+                    <thead>
+                        <!-- aqui van los titulos de la tabla-->
+                        <tr>
+                            <th rowspan="2"> Número</th>
+                            <th colspan="4">ABC</th>
+                                                   
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Número1</th>
+                            <th>Número2</th>
+                        </tr>
+                    </thead>
+                    <tbody> <!-- Aqui pongo el contenido de la tabla-->
+                    <tr> 
+                        <td>123</td>
+                        <td>ABC</td>
+                        <td>jkl</td>
+                    </tr>
+                    <tr> 
+                        <td>789 </td>
+                        <td>GHI</td>
+                        <td>def</td>
+                    </tr>
+                    <tr> 
+                        <td>000 </td>
+                        <td>JKL</td>
+                        <td>abc</td>
+                    </tr>
+                </tbody>
+                </table>
+
+
+            </section>
+
        </article>
         
         <footer>
@@ -92,7 +180,7 @@
 
 </html>
 
-<!--El siguiente atributo su fucnion es para establecer jerarquias de subtitulos
+<!--El siguiente atributo su fucion es para establecer jerarquias de subtitulos
 <h1>Titulo 1</h1>
 <h2>Titulo 2</h2>
 <h3>Negrita</h3>
