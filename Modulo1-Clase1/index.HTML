@@ -77,7 +77,7 @@
             </ol>
             </section>
             <section> 
-                <table> 
+            <table> 
                     <!--TABLAS: <table> , la tablas son importantes para ingresar mucha información, sobretodo informacion que desplieguen contenido
                         etiqueta de inicio de tabla <table></table>
                         etiqueta de head de tabla <thead></heaad>
@@ -86,14 +86,14 @@
                         etiqueta de columnas<td></td>
                         ejem: pongo 3 grupos de th, en cada creo una tabla con 4filas= copio 4 veces tr y 3 columnas= dentro de cada tr pongo  3 veceds td
                     -->               
-                  <thead>
+                    <thead>
                     <th>
                         Número
                     </th>
                     <th>ABC</th>
                     <th>abc</th>
-                 </thead>
-<tbody>
+                </thead>
+                <tbody>
                     <tr> 
                         <td>123</td>
                         <td>ABC</td>
@@ -114,8 +114,8 @@
                         <td>JKL</td>
                         <td>abc</td>
                     </tr>
-                </table>
-            </tbody>
+                </tbody>
+            </table>
             <!-- 
                 tabla sin diseño
             -->                
@@ -155,9 +155,76 @@
                         <td>JKL</td>
                         <td>abc</td>
                     </tr>
-                </tbody>
+                    </tbody>
                 </table>
 
+
+            </section>
+            <section>
+                <!-- HACER DISEÑO DE TEXTO CON HTML
+                    TAG <dl> description list, es como si fuera una lista, dentro va el siguiente tag
+                    TAG <dt> descrption title, es para el título, despues viene otro tag
+                    TAG <dd> para ingresar el contenido
+                -->
+                <dl>
+                    <dt>JPEG</dt>
+                    <dd>
+                    Large files that do not require transparent backgrounds or animations. This format is ideal for vivid photorealistic photographs as it can contain millions of colors.
+                    </dd>
+                </dl>
+
+                <!--
+                   <SPAN> se usa mucho, PARA RESALTAR palabras que queramos, siempre y cuando lo modifiquemos en CSS, por si sola no hace ningun cabio, solo es para dejar una marca
+                    - las clases en el archivo css se las pone con un .
+                -->
+                <dl>
+                    <dt>JPEG</dt>
+                    <dd>
+                    Large files that <span class="accent"> do not require transparent backgrounds </span> or animations. This format is ideal for vivid photorealistic photographs as it can contain millions of colors.
+                    </dd>
+                </dl>
+
+                <!--
+                    <p> Parrafo
+                    <sub> Subíndice
+                    <sup> potencia
+                    <br> salto de linea
+                    <b> negrita
+                    <i> cursiva
+                    <em> emphasis
+                -->
+                <p>Fórmula del <i>Agua</i> Agua: H<sub>2</sub>O</p>
+                <p>El <b>área</b> área total del terreno es 150m<sup>2</sup></p>
+                <p><strong>¡Atención!</strong> Finaliza el periodo de la suscripción.</p>
+                <p>¡Estoy <em>absolutamente encantado</em> cuando se retrasa el salario!</p>
+                 <!--
+                <address> DIRECCION
+                    también sirve para poner :
+                    <a href="">, para hacer referencia a un correo, pongo entre " mailto: correo" para que vaya directamente a enviar correo.
+                                                                                "tel: 12345, para telefono"
+                -->
+                <address>
+                    Calle 14 #20-47<br>
+                    Pasto <br>
+                    Colombia
+                </address>
+                <address>
+                    <a href="mailto:napanarvaez@gmail.com">napanarvaez@gmail.com</a><br>
+                    <a href="tel:+5731789012345">+5731789012345</a>
+                </address>
+
+                <!-- 
+                    Caracteres especiales:
+                    &nbsp; espacio
+                    &copy; copyright - caracyer especial
+                    &169#; copyright- codigo decimal
+                    &xa9#; copyright- codigo exadecimal
+        
+                -->
+                <h2>¡Hola &nbsp; amigos!</h2>
+                <p>Todos los derechos reservados &copy; webstudio, 2022</p>
+                <p>Todos los derechos reservados &#169; webstudio, 2022</p>
+                <p>Todos los derechos reservados &#xa9; webstudio, 2022</p>
 
             </section>
 
