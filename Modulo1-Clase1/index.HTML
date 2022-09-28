@@ -242,14 +242,27 @@
                 <!-- 
                     Etiqueta VIDEO: prertenece a html5, contiene de dnde viene la fuente de video y un poster, ademas solo soporta fromatos .mp4, .webm y .ogg
                 -->
-                <video>
-                    src
-                    poster
-                    width
-                    controls
-                    autoplay
-                    loponepreload="auto"
-                </video>
+                <video
+                src="video/Medusa.mp4"
+                poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=180"
+                width="180"
+                controls
+                autoplay
+                loop
+                preload="auto"
+              ></video>
+
+                <!-- 
+                    Etiqueta AUDIO: Solo soporta fromatos .mp3 y .ogg, 
+                    solo lleva la etiqueta src, type: define que tipo de audio es, para mp3 es type="audio/mpeg"
+                    none - No descargar audio de antemano
+                    metadata - Cargar la información oficial (duración, etc.)
+                    auto - Cargar de antemano todo el archivo de audio
+                -->
+            <audio src="audio/Risa de bebe 1.mp3" 
+                   type="audio/mpeg" 
+                   controls autoplay loop preload="auto">
+            </audio>
 
             </section>
 
